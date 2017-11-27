@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controladores.Entrada">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="92.0" prefWidth="580.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="name" focusColor="#09b6bc" labelFloat="true" layoutX="190.0" layoutY="182.0" prefHeight="36.0" prefWidth="221.0" promptText="Nombre de Usuario" unFocusColor="#bcbcbc">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" focusColor="#09b6bc" labelFloat="true" layoutX="190.0" layoutY="249.0" prefHeight="36.0" prefWidth="221.0" promptText="Contraseña" unFocusColor="#bcbcbc">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="login" buttonType="RAISED" layoutX="332.0" layoutY="323.0" onAction="#action" prefHeight="36.0" prefWidth="79.0" ripplerFill="WHITE" style="-fx-background-color: #09b6bc;" text="Entrar" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="133.0" fitWidth="221.0" layoutX="190.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/LogoVivus.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

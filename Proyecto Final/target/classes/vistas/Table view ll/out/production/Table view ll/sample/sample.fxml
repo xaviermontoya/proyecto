@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTreeTableColumn?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="480.0" prefWidth="640.0">
+         <children>
+             <JFXTreeTableView fx:id="treeView" prefHeight="200.0" prefWidth="200.0" stylesheets="@css.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                 <columns>
+                     <JFXTreeTableColumn minWidth="133" resizable="false" text="X" fx:id="xEditable" />
+                     <JFXTreeTableColumn fx:id="yEditable" minWidth="133" resizable="false" text="X" />
+                 </columns>
+             </JFXTreeTableView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
